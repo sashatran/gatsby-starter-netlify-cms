@@ -24,7 +24,7 @@ const Navbar = () => (
       <div className="navbar-end">
         <a
           className="navbar-item"
-          href="https://github.com/AustinGreen/gatsby-netlify-cms-boilerplate"
+          href="https://github.com/sashatran"
           target="_blank"
           rel="noopener noreferrer"
         >
