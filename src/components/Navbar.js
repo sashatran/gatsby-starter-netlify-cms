@@ -8,29 +8,67 @@ const Navbar = () => (
     <div className="container">
       <div className="navbar-brand">
         <Link to="/" className="navbar-item">
-          <figure className="image">
+          {/* <figure className="image">
             <img src={logo} alt="Kaldi" style={{ width: '88px' }} />
-          </figure>
+          </figure> */}
         </Link>
       </div>
-      <div className="navbar-start">
+      {/* <div className="navbar-start">
         <Link className="navbar-item" to="/about">
           About
         </Link>
         <Link className="navbar-item" to="/products">
           Products
         </Link>
-      </div>
+      </div> */}
       <div className="navbar-end">
+      <a
+          className="navbar-item"
+          href="http://www.sashatran.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+           <i class="fa fa-file"></i>
+        </a>
         <a
           className="navbar-item"
           href="https://github.com/sashatran"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <span className="icon">
-            <img src={github} alt="Github" />
-          </span>
+           <i class="fa fa-github"></i>
+        </a>
+        <a
+          className="navbar-item"
+          href="http://instagram.com/sasha.codes/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fa fa-instagram"></i>
+        </a>
+        <a
+          className="navbar-item"
+          href="http://codepen.io/sashatran/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fa fa-codepen"></i>
+        </a>
+        <a
+          className="navbar-item"
+          href="https://medium.com/@sashatran"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fa fa-medium"></i>
+        </a>
+        <a
+          className="navbar-item"
+          href="https://twitter.com/sa_sha26"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fa fa-twitter"></i>
         </a>
       </div>
     </div>
