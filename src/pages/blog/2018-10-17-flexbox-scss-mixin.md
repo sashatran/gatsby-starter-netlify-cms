@@ -6,6 +6,8 @@ description: FlexBox Mixin
 tags:
   - scss
 ---
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lacinia, urna eu cursus laoreet, nunc dolor sodales est, eu feugiat sapien ex a purus.
+
 ```
 @mixin flex-it() {  
   display: flex;
