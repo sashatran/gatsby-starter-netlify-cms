@@ -16,8 +16,12 @@ export default class HTML extends React.Component {
           <script
             dangerouslySetInnerHTML={{
                 __html: `
-                    var foo = 'bar';
-                    console.log(foo);
+                console.log("head");
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+        
+                gtag('config', 'UA-93030884-2');
                 `
             }}
         />

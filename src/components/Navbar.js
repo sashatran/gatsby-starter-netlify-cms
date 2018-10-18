@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import github from '../img/github-icon.svg'
-import logo from '../img/logo.svg'
+// import github from '../img/github-icon.svg'
+// import logo from '../img/logo.svg'
 
 const Navbar = () => (
   <nav className="navbar is-transparent">
@@ -28,7 +28,7 @@ const Navbar = () => (
           target="_blank"
           rel="noopener noreferrer"
         >
-           <i class="fa fa-file"></i>
+           <i className="fa fa-file"></i>
         </a>
         <a
           className="navbar-item"
@@ -36,7 +36,7 @@ const Navbar = () => (
           target="_blank"
           rel="noopener noreferrer"
         >
-           <i class="fa fa-github"></i>
+           <i className="fa fa-github"></i>
         </a>
         <a
           className="navbar-item"
@@ -44,7 +44,7 @@ const Navbar = () => (
           target="_blank"
           rel="noopener noreferrer"
         >
-          <i class="fa fa-instagram"></i>
+          <i className="fa fa-instagram"></i>
         </a>
         <a
           className="navbar-item"
@@ -52,7 +52,7 @@ const Navbar = () => (
           target="_blank"
           rel="noopener noreferrer"
         >
-          <i class="fa fa-codepen"></i>
+          <i className="fa fa-codepen"></i>
         </a>
         <a
           className="navbar-item"
@@ -60,7 +60,7 @@ const Navbar = () => (
           target="_blank"
           rel="noopener noreferrer"
         >
-          <i class="fa fa-medium"></i>
+          <i className="fa fa-medium"></i>
         </a>
         <a
           className="navbar-item"
@@ -68,7 +68,7 @@ const Navbar = () => (
           target="_blank"
           rel="noopener noreferrer"
         >
-          <i class="fa fa-twitter"></i>
+          <i className="fa fa-twitter"></i>
         </a>
       </div>
     </div>
