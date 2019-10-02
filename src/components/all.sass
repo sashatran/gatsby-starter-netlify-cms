@@ -1,6 +1,6 @@
 @import "~bulma/sass/utilities/initial-variables"
 
-$primary: #20A697
+$primary: #434bf3
 $primary-invert: #fff
 
 a 
@@ -55,8 +55,10 @@ a
       display: flex
       flex-direction: column
 
+.navbar
+  padding: 30px 0;
+
 .navbar-end
-  margin-top: 30px
   a 
     font-size: 20px
     padding: 5px 7px
@@ -65,8 +67,14 @@ a
 .navbar-item:hover
   color: $primary !important
 
+.navbar-item img 
+  max-height: 40px !important
+
 .columns 
   width: 100%
+
+.cp_embed_wrapper, iframe
+  width: 70% !important
 
 @media (min-width: 736px) 
   .navbar-end 
