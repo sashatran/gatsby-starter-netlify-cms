@@ -1,11 +1,18 @@
 @import "~bulma/sass/utilities/initial-variables"
+@import url('https://fonts.googleapis.com/css?family=Muli:700&display=swap')
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,500|Muli:600,700|Nunito:400,600&display=swap');
 
 $primary: #434bf3
 $primary-invert: #fff
-$secondary: #ffe6ee
+$text: #363636
+$secondary: #6269f2
+$pink: #ffe6ee
+
+::selection
+    background-color: $pink
 
 a 
-  color: $primary !important
+  // color: $primary !important
   &:hover 
     color: #777 !important
     transition: .3s all
@@ -68,14 +75,25 @@ a
   padding: 0 30px !important
   a 
     color: #9c9d9e !important
-    font-size: 20px
-    padding: 5px 7px
-    color: #777
+    font-size: 11px
+    padding: 5px 14px
+    color: #363636 !important
+    text-transform: uppercase
+    letter-spacing: 1px
+  i 
+    padding-right: 7px
 
-.navbar-item:hover
-  color: $secondary !important
+.hamburger-menu
+  display: none
 
-.image 
+.navbar-item i
+  color: $primary
+  opacity: 0.7
+
+.navbar-item:hover i
+  opacity: 1
+
+.navbar-item .image 
   padding: 0 30px
 
 .navbar-item img 
@@ -87,6 +105,46 @@ a
 
 .title
   font-family: Playfair Display
+  position: relative
+  display: flex
+  align-items: center
+  
+// .title:before
+//   position: absolute
+//   content: ''
+//   width: 3px
+//   height: 100%
+//   background: $secondary
+//   left: -10px
+//   top: 3px
+
+// .title p
+//   position: relative
+//   padding: 3px 10px
+
+// .title p:after
+//   position: absolute
+//   content: ''
+//   width: 100%
+//   height: 100%
+//   background: $pink
+//   left: 0px
+//   z-index: -1
+
+.post-title
+  color: #333
+  font-weight: 600
+  // font-family: 'Muli', sans-serif
+  font-family: 'Nunito', sans-serif;
+  // font-family: 'Fira Sans', sans-serif;
+
+.post-date-all
+  color: #4f4e4e
+  font-size: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-family: Montserrat, sans-serif;
+  margin-top: 2px
 
 .post-date
     color: #222;
@@ -94,18 +152,24 @@ a
     letter-spacing: 2px;
     text-transform: uppercase;
     font-family: Montserrat, sans-serif;
-    text-align: center;
+    text-align: center
     font-weight: 400 !important
 
 .single-post
   padding-top: 40px
-  padding-left: 20px
+  font-family: 'Source Sans Pro', sans-serif
+
+.content-title
+  padding: 20px 0
 
 .content li + li
     margin-top: 1em !important
 
 .content p:not(:last-child), .title:not(:last-child)
   margin-bottom: 0.2em !important
+
+.content p:not(:last-child) + ol 
+  margin-top: 2em
 
 .columns 
   width: 100%
@@ -119,6 +183,16 @@ a
   border-radius: 10px
   font-size: 13px;
 
+.copyright 
+  color: #9c9d9e !important
+    font-size: 11px
+    padding: 5px 14px
+    color: #363636 !important
+    text-transform: uppercase
+    letter-spacing: 1px
+    text-align: center
+
+// MEDIA QUERIES
 @media screen and (min-width: 1088px)
   .navbar .container
     max-width: 100% !important
@@ -130,12 +204,66 @@ a
 
 
 @media (max-width: 736px) 
+  .container
+    position: relative
   .navbar-end 
+    position: absolute
+    width: 100%
+    top: 70px
+    transform: translateX(100%)
+    padding: 0 !important
+    background-color: white
+    transition: 0.8s all ease
+
+    .navbar-item 
+      font-size: 16px
+      padding: 20px
+
+  .hamburger-menu
+    display: block
+
+  .open
+    transform: translateX(0%)
+    transition: 0.8s transform ease
+
+  .navbar-mobile
     display: flex
     justify-content: center
+    padding: 0 20px
+
+    i 
+      color: $primary
+
+  .navbar-item i 
+    padding-right: 20px
+
+
+  .navbar-item .image
+    padding: 0
+  
+  .mobile-menu
+    display: flex
+    flex-direction: column
+  
+  .navbar > .container
+    align-items: center !important
+
+  .section
+    padding: 1rem 1.5rem !important
+
+  .content:not(:last-child)
+    margin-bottom: 20px !important
+
   .container 
-    display: block
+    display: flex !important
+    justify-content: space-between
+    align-items: center
     .content 
       width: 100%
+    .content-title
+      padding: 20px 0
+      
+      h1
+        font-size: 25px !important
 
 @import "~bulma"

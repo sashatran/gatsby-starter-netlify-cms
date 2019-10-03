@@ -11,8 +11,8 @@ export default class IndexPage extends React.Component {
       <Layout>
         <section className="section">
           <div className="container">
-            <div className="content">
-              <h1 className="has-text-weight-bold" style={{ fontSize: "30px", fontFamily: "Playfair Display SC, serif" }}>Blog Posts</h1>
+            <div className="content-title">
+              {/* <h1 className="has-text-weight-bold" style={{ fontSize: "30px", fontFamily: "Playfair Display SC, serif" }}>Blog Posts</h1> */}
             </div>
             <div className="container">
             {posts
@@ -23,11 +23,11 @@ export default class IndexPage extends React.Component {
                   key={post.id}
                 >
                   <p>
-                    <Link className="has-text-primary" to={post.fields.slug}>
+                    <Link className="post-title" to={post.fields.slug}>
                       {post.frontmatter.title}
                     </Link>
                     {/* <span> &bull; </span> */}
-                    <small>{post.frontmatter.date}</small>
+                    <small className="post-date-all">{post.frontmatter.date}</small>
                   </p>
                   {/* <p> */}
                     {/* {post.excerpt} */}
