@@ -2,6 +2,7 @@
 
 $primary: #434bf3
 $primary-invert: #fff
+$secondary: #ffe6ee
 
 a 
   color: $primary !important
@@ -56,25 +57,71 @@ a
       flex-direction: column
 
 .navbar
-  padding: 30px 0;
+  padding: 10px 0;
+  .container 
+    justify-content: space-between !important
+
+.navbar svg 
+  fill: #9c9d9e
 
 .navbar-end
+  padding: 0 30px !important
   a 
+    color: #9c9d9e !important
     font-size: 20px
     padding: 5px 7px
     color: #777
 
 .navbar-item:hover
-  color: $primary !important
+  color: $secondary !important
+
+.image 
+  padding: 0 30px
 
 .navbar-item img 
-  max-height: 40px !important
+  max-height: 100% !important
+  width: 50% !important
+
+.section
+  padding: 5rem 1.5rem !important
+
+.title
+  font-family: Playfair Display
+
+.post-date
+    color: #222;
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: Montserrat, sans-serif;
+    text-align: center;
+    font-weight: 400 !important
+
+.single-post
+  padding-top: 40px
+  padding-left: 20px
+
+.content li + li
+    margin-top: 1em !important
+
+.content p:not(:last-child), .title:not(:last-child)
+  margin-bottom: 0.2em !important
 
 .columns 
   width: 100%
 
 .cp_embed_wrapper, iframe
   width: 70% !important
+
+.taglist a
+  padding: 5px 10px
+  background-color: #ddf6fa
+  border-radius: 10px
+  font-size: 13px;
+
+@media screen and (min-width: 1088px)
+  .navbar .container
+    max-width: 100% !important
 
 @media (min-width: 736px) 
   .navbar-end 

@@ -13,6 +13,7 @@ export const BlogPostTemplate = ({
   tags,
   title,
   helmet,
+  date
 }) => {
   const PostContent = contentComponent || Content
 
@@ -22,13 +23,14 @@ export const BlogPostTemplate = ({
       <div className="container content">
         <div className="columns">
           <div className="column is-10 is-offset-1">
-          <a href="/">Back</a>
-            <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
-              {title}
-            </h1>
-            <p>{description}</p>
-            <PostContent content={content} />
-            {tags && tags.length ? (
+          {/* <a href="/"><i class="fa fa-chevron-left" style={{fontSize: '12px'}}></i> Back</a> */}
+            <h3 className="title has-text-weight-bold is-bold-light">
+              <p>{title}</p>
+            </h3>
+            <small className="post-date">{date}</small>
+            {/* <p>{description}</p> */}
+            <PostContent content={content} className="single-post"/>
+            {/* {tags && tags.length ? (
               <div style={{ marginTop: `4rem` }}>
                 <h4>Tags</h4>
                 <ul className="taglist">
@@ -39,7 +41,7 @@ export const BlogPostTemplate = ({
                   ))}
                 </ul>
               </div>
-            ) : null}
+            ) : null} */}
           </div>
         </div>
       </div>
@@ -67,6 +69,7 @@ const BlogPost = ({ data }) => {
         helmet={<Helmet title={`${post.frontmatter.title} | Blog`} />}
         tags={post.frontmatter.tags}
         title={post.frontmatter.title}
+        date={post.frontmatter.date}
       />
     </Layout>
   )

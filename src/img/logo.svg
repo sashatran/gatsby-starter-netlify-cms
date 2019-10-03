@@ -1,14 +1,25 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="100" viewBox="0 0 300 100">
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="100" viewBox="0 0 300 100">
   <defs>
     <style>
       .cls-1 {
-        font-size: 41.667px;
-        fill: #434bf3;
-        font-family: Montserrat;
+        fill: #ffe6ee;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #6269f2;
+        stroke-width: 2px;
+      }
+
+      .cls-3 {
+        font-size: 29.167px;
+        fill: #6269f2;
+        font-family: "Playfair Display";
         font-weight: 700;
       }
     </style>
   </defs>
-  <image width="300" height="100" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAABkCAYAAAA8AQ3AAAABYklEQVR4nO3UAQkAQRDEsP3373lORyGxUOi3bQcQ8IsEVBgWkGFYQIZhARmGBWQYFpBhWECGYQEZhgVkGBaQYVhAhmEBGYYFZBgWkGFYQIZhARmGBWQYFpBhWECGYQEZhgVkGBaQYVhAhmEBGYYFZBgWkGFYQIZhARmGBWQYFpBhWECGYQEZhgVkGBaQYVhAhmEBGYYFZBgWkGFYQIZhARmGBWQYFpBhWECGYQEZhgVkGBaQYVhAhmEBGYYFZBgWkGFYQIZhARmGBWQYFpBhWECGYQEZhgVkGBaQYVhAhmEBGYYFZBgWkGFYQIZhARmGBWQYFpBhWECGYQEZhgVkGBaQYVhAhmEBGYYFZBgWkGFYQIZhARmGBWQYFpBhWECGYQEZhgVkGBaQYVhAhmEBGYYFZBgWkGFYQIZhARmGBWQYFpBhWECGYQEZhgVkGBaQYVhAhmEBGYYFZBgWkGFYQMPdPcEIBMTzvPuTAAAAAElFTkSuQmCC"/>
-  <text id="Sasha_Tran" data-name="Sasha Tran" class="cls-1" x="29.695" y="65.18">Sasha Tran</text>
+  <circle class="cls-1" cx="57" cy="50" r="37"/>
+  <circle class="cls-2" cx="49" cy="50" r="37"/>
+  <text id="Sasha_Tran" data-name="Sasha Tran" class="cls-3" x="109.567" y="61.45">Sasha Tran</text>
 </svg>
