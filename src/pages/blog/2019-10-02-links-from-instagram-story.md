@@ -7,5 +7,5 @@ tags:
   - instagram
 ---
 1. [Azio Corp RCK Keyboard](https://aziocorp.com/collections/keyboard/products/rck?variant=13401223823403)\
-   Code: SASHA20OFF
+   Use code: SASHA20OFF for 20% off
 2. [Eloquent Javascript](https://eloquentjavascript.net)
