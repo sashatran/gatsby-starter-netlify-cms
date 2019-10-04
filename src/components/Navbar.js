@@ -81,7 +81,7 @@ const Navbar = () => {
         </a>
         <a
           className="navbar-item"
-          href="https://twitter.com/sa_sha26"
+          href="https://twitter.com/sashattran"
           target="_blank"
           rel="noopener noreferrer"
         >
