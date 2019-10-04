@@ -23,6 +23,7 @@ export default class IndexPage extends React.Component {
                   key={post.id}
                 >
                   <p>
+                  
                     <Link className="post-title" to={post.fields.slug}>
                       {post.frontmatter.title}
                     </Link>

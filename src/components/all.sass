@@ -12,11 +12,18 @@ $pink: #ffe6ee
 ::selection
     background-color: $pink
 
+strong
+  font-weight: 600
+
 a 
-  // color: $primary !important
   &:hover 
     color: #777
     transition: .3s all
+
+// about page
+.about
+  img 
+    max-width: 50%
 
 .content .taglist
   list-style: none
@@ -80,6 +87,8 @@ a
     color: #363636
     text-transform: uppercase
     letter-spacing: 1px
+  a:hover 
+    color: $primary !important
   i 
     padding-right: 7px
 
@@ -109,6 +118,8 @@ a
   display: flex
   align-items: center
   
+.dot 
+  width: 20px
 // .title:before
 //   position: absolute
 //   content: ''
