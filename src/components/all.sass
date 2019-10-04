@@ -1,6 +1,7 @@
 @import "~bulma/sass/utilities/initial-variables"
 @import url('https://fonts.googleapis.com/css?family=Muli:700&display=swap')
 @import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,500|Muli:600,700|Nunito:400,600&display=swap');
+@import "~bulma"
 
 $primary: #434bf3
 $primary-invert: #fff
@@ -14,7 +15,7 @@ $pink: #ffe6ee
 a 
   // color: $primary !important
   &:hover 
-    color: #777 !important
+    color: #777
     transition: .3s all
 
 .content .taglist
@@ -47,7 +48,7 @@ a
   align-items: center
 
 .margin-top-0
-  margin-top: 0 !important
+  margin-top: 0 
 
 .container 
   display: flex
@@ -66,18 +67,17 @@ a
 .navbar
   padding: 10px 0;
   .container 
-    justify-content: space-between !important
+    justify-content: space-between
 
 .navbar svg 
   fill: #9c9d9e
 
 .navbar-end
-  padding: 0 30px !important
+  padding: 0 30px
   a 
-    color: #9c9d9e !important
     font-size: 11px
     padding: 5px 14px
-    color: #363636 !important
+    color: #363636
     text-transform: uppercase
     letter-spacing: 1px
   i 
@@ -97,11 +97,11 @@ a
   padding: 0 30px
 
 .navbar-item img 
-  max-height: 100% !important
-  width: 50% !important
+  max-height: 100%  
+  width: 50%
 
 .section
-  padding: 5rem 1.5rem !important
+  padding: 5rem 1.5rem
 
 .title
   font-family: Playfair Display
@@ -140,20 +140,20 @@ a
 
 .post-date-all
   color: #4f4e4e
-  font-size: 10px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  font-family: Montserrat, sans-serif;
+  font-size: 10px
+  letter-spacing: 1px
+  text-transform: uppercase
+  font-family: Montserrat, sans-serif
   margin-top: 2px
 
 .post-date
     color: #222;
     font-size: 10px;
     letter-spacing: 2px;
-    text-transform: uppercase;
-    font-family: Montserrat, sans-serif;
+    text-transform: uppercase
+    font-family: Montserrat, sans-serif
     text-align: center
-    font-weight: 400 !important
+    font-weight: 400
 
 .single-post
   padding-top: 40px
@@ -166,10 +166,10 @@ a
   padding: 20px 0
 
 .content li + li
-    margin-top: 1em !important
+    margin-top: 1em
 
 .content p:not(:last-child), .title:not(:last-child)
-  margin-bottom: 0.2em !important
+  margin-bottom: 0.2em
 
 .content p:not(:last-child) + ol 
   margin-top: 2em
@@ -178,7 +178,7 @@ a
   width: 100%
 
 .cp_embed_wrapper, iframe
-  width: 70% !important
+  width: 70%
 
 .taglist a
   padding: 5px 10px
@@ -187,10 +187,10 @@ a
   font-size: 13px;
 
 .copyright 
-  color: #9c9d9e !important
+  color: #9c9d9e
     font-size: 11px
     padding: 5px 14px
-    color: #363636 !important
+    color: #363636
     text-transform: uppercase
     letter-spacing: 1px
     text-align: center
@@ -198,7 +198,7 @@ a
 // MEDIA QUERIES
 @media screen and (min-width: 1088px)
   .navbar .container
-    max-width: 100% !important
+    max-width: 100% 
 
 @media (min-width: 736px) 
   .navbar-end 
@@ -214,7 +214,7 @@ a
     width: 100%
     top: 70px
     transform: translateX(100%)
-    padding: 0 !important
+    padding: 0
     background-color: white
     transition: 0.8s all ease
 
@@ -249,16 +249,19 @@ a
     flex-direction: column
   
   .navbar > .container
-    align-items: center !important
+    align-items: center
 
   .section
-    padding: 1rem 1.5rem !important
+    padding: 1rem 1.5rem
 
   .content:not(:last-child)
-    margin-bottom: 20px !important
+    margin-bottom: 20px
+
+  .navbar > .container 
+    display: flex
 
   .container 
-    display: flex !important
+    display: flex
     justify-content: space-between
     align-items: center
     .content 
@@ -267,6 +270,4 @@ a
       padding: 20px 0
       
       h1
-        font-size: 25px !important
-
-@import "~bulma"
+        font-size: 25px
