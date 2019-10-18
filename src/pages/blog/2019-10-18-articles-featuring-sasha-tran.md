@@ -32,3 +32,5 @@ tags:
     [https://css-tricks.com/why-would-you-do-that-in-css/ ](https://css-tricks.com/why-would-you-do-that-in-css/)
 13. Personal branding for tech pros (featured) \
     <https://www.beseen.com/blog/talent/the-complete-guide-to-personal-branding-for-tech-pros/>
+14. Girl Boss: How I Started My Own Business by Sasha Tran - Guest post on Ally Blog\
+    <https://www.ally.com/do-it-right/trends/tips-for-starting-and-growing-your-own-business/>
