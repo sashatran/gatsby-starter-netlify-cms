@@ -19,7 +19,7 @@ tags:
 6. How to measure your coding skills, Codecademy (featured)\
    <https://customeriomail.codecademy.com/deliveries/RM-kAgMAAW0sbXRsUrxaHRpW0wM6Dw==>
 7. Case Studies on How to Increase Instagram Engagement, Daniela Furtado, (featured)\
-   <https://www.thisisdanielafurtado.net/tech-brands-instagram-engagement/>
+   <https://www.thisisdanielafurtado.com/tech-brands-instagram-engagement/>
 8. Codepen Sparks (featured)\
    <https://s.codepen.io/team/codepen/debug/JEQxGM>
 9. CSS For Funsies (featured)\
@@ -30,5 +30,5 @@ tags:
     <https://dev.to/aspittel/learning-css-through-creating-art-9i7>
 12. Why would you do that in CSS? (featured)\
     [https://css-tricks.com/why-would-you-do-that-in-css/ ](https://css-tricks.com/why-would-you-do-that-in-css/)
-13.  Personal branding for tech pros (featured) \
+13. Personal branding for tech pros (featured) \
     <https://www.beseen.com/blog/talent/the-complete-guide-to-personal-branding-for-tech-pros/>
