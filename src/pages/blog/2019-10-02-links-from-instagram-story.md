@@ -12,5 +12,8 @@ These are the links that I've shared on my [Instagram](https://www.instagram.com
    Use code: **SASHA20OFF** for 20% off
 2. [Codecademy Pro](https://www.codecademy.com/pro/membership)\
    Use code: **learnbetter** for 25% off annual plan
-3. [Girl Boss: How I Started My Own Business by Sasha Tran](https://www.ally.com/do-it-right/trends/tips-for-starting-and-growing-your-own-business/)\
-   Guest post on Ally blog
+3. Guest post on Ally blo
+
+   [Girl Boss: How I Started My Own Business by Sasha Tran](https://www.ally.com/do-it-right/trends/tips-for-starting-and-growing-your-own-business/)
+4. How to become a UX Engineer\
+   [Skills Needed to Become a UX Engineer in 2019](https://uxengineer.com/skills-needed-become-a-ux-engineer/)
