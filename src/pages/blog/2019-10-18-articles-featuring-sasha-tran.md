@@ -34,3 +34,5 @@ tags:
     <https://www.beseen.com/blog/talent/the-complete-guide-to-personal-branding-for-tech-pros/>
 14. Girl Boss: How I Started My Own Business by Sasha Tran - Guest post on Ally Blog\
     <https://www.ally.com/do-it-right/trends/tips-for-starting-and-growing-your-own-business/>
+15. 8 Web Developers Worth Following on Instagram\
+    <https://blog.brainstation.io/8-web-developers-worth-following-on-instagram/>
