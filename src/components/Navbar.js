@@ -12,7 +12,6 @@ const Navbar = () => {
 
   return (
   <nav className="navbar is-transparent">
-    <div className="container">
       <div className="navbar-brand">
         <Link to="/" className="navbar-item">
           <figure className="image">
@@ -89,7 +88,6 @@ const Navbar = () => {
           Twitter
         </a>
       </div>
-    </div>
   </nav>
 )
     }

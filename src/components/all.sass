@@ -1,6 +1,6 @@
 @import "~bulma/sass/utilities/initial-variables"
-@import url('https://fonts.googleapis.com/css?family=Muli:700&display=swap')
-@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,500|Muli:600,700|Nunito:400,600&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Muli:600,700|Nunito:400,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Muli:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500&display=swap');
 @import "~bulma"
 
 $primary: #434bf3
@@ -11,6 +11,9 @@ $pink: #ffe6ee
 
 ::selection
     background-color: $pink
+
+body 
+  font-family: 'Muli', sans-serif
 
 strong
   font-weight: 600
@@ -58,21 +61,18 @@ a
   margin-top: 0 
 
 .container 
-  display: flex
-  width: 100%
-  flex-wrap: wrap
+  width: 50%
   justify-content: center
   .content 
-    padding: 20px
-    width: calc(100% / 3.8)
-    height: 100px
+    padding: 20px 0
     margin: 5px
+    border-bottom: 1px solid #e6e6e6
     p
-      display: flex
-      flex-direction: column
+      margin: 5px 0
 
 .navbar
   padding: 10px 0;
+  box-shadow: 0 1px 2px 0 #74747426, 0 2px 6px 2px #74747426
   .container 
     justify-content: space-between
 
@@ -82,11 +82,11 @@ a
 .navbar-end
   padding: 0 30px
   a 
-    font-size: 11px
+    font-size: 13px
     padding: 5px 14px
-    color: #363636
-    text-transform: uppercase
-    letter-spacing: 1px
+    color: #6d6d6d
+    font-family: 'Muli', sans-serif
+    font-weight: 600
   a:hover 
     color: $primary !important
   i 
@@ -109,6 +109,10 @@ a
   max-height: 100%  
   width: 50%
 
+.navbar
+    display: flex
+    align-items: center
+
 .section
   padding: 5rem 1.5rem
 
@@ -117,37 +121,16 @@ a
   position: relative
   display: flex
   align-items: center
-  
-.dot 
-  width: 20px
-// .title:before
-//   position: absolute
-//   content: ''
-//   width: 3px
-//   height: 100%
-//   background: $secondary
-//   left: -10px
-//   top: 3px
 
-// .title p
-//   position: relative
-//   padding: 3px 10px
-
-// .title p:after
-//   position: absolute
-//   content: ''
-//   width: 100%
-//   height: 100%
-//   background: $pink
-//   left: 0px
-//   z-index: -1
+.back-btn
+  color: $primary
 
 .post-title
-  color: #333
+  color: #505050
   font-weight: 600
-  // font-family: 'Muli', sans-serif
-  font-family: 'Nunito', sans-serif;
-  // font-family: 'Fira Sans', sans-serif;
+  font-family: 'Muli', sans-serif
+  &:hover
+    color: $primary
 
 .post-date-all
   color: #4f4e4e
@@ -166,15 +149,29 @@ a
     text-align: center
     font-weight: 400
 
+.post-excerpt 
+  font-size: 14px
+
 .single-post
   padding-top: 40px
-  font-family: 'Source Sans Pro', sans-serif
+  font-family: 'Muli', sans-serif
+  font-weight: 600
 
+  &-title 
+    font-family: 'Muli', sans-serif
+    font-weight: 800
   a
     color: $secondary
 
 .content-title
-  padding: 20px 0
+  font-size: 30px
+  font-family: 'Muli', sans-serif
+  font-weight: 800
+  color: #505050
+
+h3.content-title 
+  font-weight: 800
+  color: #505050
 
 .content li + li
     margin-top: 1em
@@ -206,6 +203,16 @@ a
     letter-spacing: 1px
     text-align: center
 
+.footer 
+  text-align: center
+  padding: 20px
+  background: transparent
+  font-size: 13px
+  font-weight: 600
+
+.footer-link
+  color: $primary
+  
 // MEDIA QUERIES
 @media screen and (min-width: 1088px)
   .navbar .container
@@ -221,6 +228,14 @@ a
     overflow: hidden
   .container
     position: relative
+    flex-direction: column
+    width: 100%
+    align-items: flex-start
+
+  .navbar-brand
+    width: 90%
+  .navbar-mobile
+    width: 10% 
   .navbar-end 
     position: absolute
     width: 100%
@@ -245,7 +260,7 @@ a
   .navbar-mobile
     display: flex
     justify-content: center
-    padding-right: 20px
+    padding-right: 12px
 
     i 
       color: $primary
@@ -274,13 +289,13 @@ a
     display: flex
 
   .container 
-    display: flex
-    justify-content: space-between
-    align-items: center
+    position: relative
+    flex-direction: column
+    width: 100%
+    align-items: flex-start
+    padding: 20px
     .content 
       width: 100%
-    .content-title
-      padding: 20px 0
       
       h1
         font-size: 25px

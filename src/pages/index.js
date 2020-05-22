@@ -10,36 +10,31 @@ export default class IndexPage extends React.Component {
     return (
       <Layout>
         <section className="section">
-          <div className="container">
-            <div className="content-title">
-              {/* <h1 className="has-text-weight-bold" style={{ fontSize: "30px", fontFamily: "Playfair Display SC, serif" }}>Blog Posts</h1> */}
-            </div>
             <div className="container">
+            <h2 className="content-title">Notes</h2>
             {posts
               .map(({ node: post }) => (
                 <div
                   className="content"
-                  style={{ border: '1px solid #cecfd0' }}
                   key={post.id}
                 >
+                  <small className="post-date-all">{post.frontmatter.date}</small>
                   <p>
-                  
                     <Link className="post-title" to={post.fields.slug}>
                       {post.frontmatter.title}
                     </Link>
                     {/* <span> &bull; </span> */}
-                    <small className="post-date-all">{post.frontmatter.date}</small>
+                    
                   </p>
-                  {/* <p> */}
-                    {/* {post.excerpt} */}
-                    {/* <Link className="button is-small" to={post.fields.slug}>
-                      Keep Reading →
+                  <p className="post-excerpt">
+                    {post.excerpt}
+                    {/* <Link to={post.fields.slug}>
+                       <p>Keep Reading →</p>
                     </Link> */}
-                  {/* </p> */}
+                  </p>
                 </div>
               ))}
               </div>
-          </div>
         </section>
       </Layout>
     )
@@ -62,7 +57,7 @@ export const pageQuery = graphql`
     ) {
       edges {
         node {
-          excerpt(pruneLength: 400)
+          excerpt(pruneLength: 50)
           id
           fields {
             slug

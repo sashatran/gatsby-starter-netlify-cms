@@ -21,12 +21,8 @@ export const BlogPostTemplate = ({
     <section className="section">
       {/* {helmet || ''} */}
       <div className="container content">
-        <div className="columns">
-          <div className="column is-10 is-offset-1">
-          {/* <a href="/"><i class="fa fa-chevron-left" style={{fontSize: '12px'}}></i> Back</a> */}
-            <h3 className="title has-text-weight-bold is-bold-light">
-              <p>{title}</p>
-            </h3>
+          <a className="back-btn" href="/"><i class="fa fa-chevron-left" style={{fontSize: '12px'}}></i> Back</a>
+            <h3 className="content-title">{title}</h3>
             <small className="post-date">{date}</small>
             {/* <p>{description}</p> */}
             <PostContent content={content} className="single-post"/>
@@ -43,8 +39,6 @@ export const BlogPostTemplate = ({
               </div>
             ) : null} */}
           </div>
-        </div>
-      </div>
     </section>
   )
 }
