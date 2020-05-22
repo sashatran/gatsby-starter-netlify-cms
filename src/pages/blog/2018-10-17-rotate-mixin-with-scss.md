@@ -6,6 +6,8 @@ description: with Browser Prefix
 tags:
   - scss
 ---
+The transform property requires browser prefix. 
+
 ```
 @mixin rotate($degree) {
  -webkit-transform: $degree;
