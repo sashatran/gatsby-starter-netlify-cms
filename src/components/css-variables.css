@@ -1,0 +1,13 @@
+:root {
+    /* --deckgo-highlight-code-background: #4f4f4f; */
+    /* --deckgo-highlight-code-carbon-background: white; */
+    --deckgo-highlight-code-padding: 10px 40px;
+}
+
+.carbon {
+    display: none;
+}
+
+deckgo-highlight-code .deckgo-highlight-code {
+    padding: 20px;
+}
