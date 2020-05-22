@@ -6,7 +6,12 @@ description: Lighten A Color
 tags:
   - scss
 ---
+Lighten a color with SCSS. 
+
+
+
 HTML
+
 ```
 <div class="box" data-style="1">10%</div>
 <div class="box" data-style="2">20%</div>
@@ -14,7 +19,9 @@ HTML
 <div class="box" data-style="4">40%</div>
 <div class="box" data-style="5">50%</div>
 ```
+
 CSS
+
 ```
 $background: #47BFC1;
 
