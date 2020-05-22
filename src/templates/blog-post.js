@@ -21,7 +21,7 @@ export const BlogPostTemplate = ({
     <section className="section">
       {/* {helmet || ''} */}
       <div className="container content">
-          <a className="back-btn" href="/"><i class="fa fa-chevron-left" style={{fontSize: '12px'}}></i> Back</a>
+          <a className="back-btn" href="/"><i className="fa fa-chevron-left" style={{fontSize: '12px'}}></i> Back</a>
             <h3 className="content-title">{title}</h3>
             <small className="post-date">{date}</small>
             {/* <p>{description}</p> */}

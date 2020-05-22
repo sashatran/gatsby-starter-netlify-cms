@@ -73,6 +73,8 @@ a
 .navbar
   padding: 10px 0;
   box-shadow: 0 1px 2px 0 #74747426, 0 2px 6px 2px #74747426
+  position: fixed
+  width: 100%
   .container 
     justify-content: space-between
 
@@ -125,6 +127,9 @@ a
 .back-btn
   color: $primary
 
+.post-wrapper 
+  padding-top: 50px
+
 .post-title
   color: #505050
   font-weight: 600
@@ -162,6 +167,7 @@ a
     font-weight: 800
   a
     color: $secondary
+    word-wrap: break-word
 
 .content-title
   font-size: 30px
@@ -181,6 +187,14 @@ h3.content-title
 
 .content p:not(:last-child) + ol 
   margin-top: 2em
+
+.content pre, .content pre:not(:last-child)
+  margin: 20px 0
+
+code
+  color: #ff38dc
+  font-size: 15px
+  margin: 0 7px
 
 .columns 
   width: 100%
@@ -212,7 +226,7 @@ h3.content-title
 
 .footer-link
   color: $primary
-  
+
 // MEDIA QUERIES
 @media screen and (min-width: 1088px)
   .navbar .container
@@ -288,12 +302,15 @@ h3.content-title
   .navbar > .container 
     display: flex
 
+  .post-wrapper
+    padding-top: 70px
+
   .container 
     position: relative
     flex-direction: column
     width: 100%
     align-items: flex-start
-    padding: 20px
+    padding: 20px 0
     .content 
       width: 100%
       

@@ -20,7 +20,7 @@ const TemplateWrapper = ({ children }) => (
     
     </Helmet>
     <Navbar />
-    <div>{children}</div>
+    <div class="post-wrapper">{children}</div>
     <Footer></Footer>
   </div>
 )
