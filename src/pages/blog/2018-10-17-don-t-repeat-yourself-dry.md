@@ -6,6 +6,9 @@ description: Don't Repeat Yourself(DRY)
 tags:
   - scss
 ---
+Using SCSS % to create a reusable styles.
+ 
+
 ```
 %heading {
  font-family: 'Roboto', sans-serif;
