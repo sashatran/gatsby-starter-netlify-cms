@@ -6,6 +6,8 @@ description: Mix Colors
 tags:
   - scss
 ---
+Mixing colors with SCSS _mix_ function. 
+
 ```
 $a: #E50C5E;
 $b: #E16A2E;
