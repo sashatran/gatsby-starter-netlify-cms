@@ -6,6 +6,8 @@ description: For Loop in SCSS
 tags:
   - scss
 ---
+Oh yes, we can use for loop in SCSS! 
+
 ```
 <div class="flex-container">
  <div class="flex-child" data-style="1"></div> 
